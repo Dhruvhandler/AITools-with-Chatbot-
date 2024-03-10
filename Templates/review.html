@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="C:\Users\dhruv\Data_Science\Static\css\bootstrap.min.css">
+  <style>
+        body {
+  background-image: url("C:/Users/dhruv/Data_Science/Static/image/istockphoto-1389405898-170667a.jpg");
+  width: auto;
+}
+
+.reviewRating {
+  color: white;
+  background-color: #202020;
+  text-align: centre;
+  margin: auto;
+  margin-top: 4em;
+  width: 30em;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2em 2em;
+}
+  </style>   
+  <img src=width:300px; height:300px;">     
+    </head>
+ <body>
+   
+<form method="POST" action="" class="reviewRating" id="grad" c ng-controller="ReviewController as reviewCTRL" >
+  {% csrf_token %}
+  <div class="form-group">
+    <label for="exampleInputName2" ng-model="reviews.name">
+      <h3>Name</h3>
+    </label>
+    <input name="nm" type="text" class="form-control" id="exampleInputName2" >
+  </div> 
+  <br />
+  <label for="">
+    <h3>Write a Review</h3>
+  </label>
+  <textarea name="msg" id="" cols="50" rows="10"></textarea>
+   <br />
+   <br />
+   <div align="centre">  
+    <button type="submit" class="btn btn-primary">Submit Review</button>
+   </div>
+</form>
+ </body>
+</html>
